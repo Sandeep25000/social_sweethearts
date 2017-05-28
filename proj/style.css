@@ -1,0 +1,75 @@
+            body{
+            background-color: #fff;
+            background-size: 100% 0.2em;
+			-webkit-background-size: 100% 0.2em;
+            -moz-background-size: 100%  0.1em;
+            -o-background-size: 100%  0.2em;
+            background-image: linear-gradient( 90deg, transparent 79px, transparent 81px ), linear-gradient( #eee .1em, transparent .1em );
+            font: italic bold 18px/30px Georgia, serif;
+            }
+            header{
+            /* background: rgba(0, 0, 0, 0) linear-gradient(to right, #004ff9, #fff94c) repeat scroll 0 0; */
+            background: url(be.png) no-repeat center center;
+            -webkit-background-size: 100%;
+            -moz-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 101%;
+            color: #0d0a0a;
+            text-align: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            line-height: 5;
+            }
+            .border_cust{
+            z-index: 1;
+            line-height: 3;
+            padding: 10px;
+            }
+            .cust_ht{
+            height: 148px;
+			}
+            .grey_txt{
+            color: grey !important;
+            margin: 18px 0px 0px 0px;
+            font: italic 300 14px Georgia, serif !important;
+            }	 
+            .input-hidden {
+            position: absolute;
+            left: -9999px;
+            }
+            #slider-range-max, #slider-range-max1, #slider-range-max > span , #slider-range-max1 > span {
+            cursor: pointer !important;
+            }
+            #res{
+            opacity : 1.0;
+            background: url(cheers.gif) no-repeat center center; 
+            -webkit-background-size: 600px;
+            -moz-background-size: 600px;
+            -o-background-size: 600px;
+            background-size: 600px;
+            font: italic 900 12px/30px Georgia, serif;
+            color: #fff;
+            z-index: -1;
+            border-radius: 50%;
+            padding: 10px;
+            }
+            .cust_mar{
+            margin-left: 52px;
+            cursor: pointer;
+            }
+            input[type=radio]:checked + label>img {
+            border: 1px solid #000;
+            box-shadow: 0 0 3px 3px #ececec;
+			transform: rotateZ(-10deg) rotateX(10deg);
+            }
+            input[type=radio]:hover + label>img {
+            width: 160px;
+            height: 105px;
+            }
+            input[type=radio] + label>img {
+            border: 1px solid #fff;
+            width: 150px;
+            height: 100px;
+            transition: 500ms all;
+            }
+             

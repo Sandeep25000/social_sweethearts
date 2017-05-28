@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social SweetHearts</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="index.js"></script>
+         
+    </head>
+    <body>
+        <header>
+            <p>  How many Diamonds is your house worth?</p>  
+        </header>
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+            <form id="first">
+                <div class="row  border_cust">
+                    <p>
+                        <label for="dim">Total Dimension:</label>
+                        <input type="text"  class="pull-right grey_txt" id="dim" readonly  >  
+                        <span  class="pull-right grey_txt" >Sq Ft &nbsp;&nbsp; </span>
+                    <div id="slider-range-max"></div>
+                    </p>
+                </div>
+                <div class="row  border_cust">
+                    <p>
+                        <label for="bed"><span>Number of bedrooms:</span> </label>
+                        <input type="text"  class="pull-right grey_txt" id="bed" readonly  >
+                    <div id="slider-range-max1"></div>
+                    </p>
+                </div>
+                <div class="row  border_cust  cust_ht">
+                    <span> Interior Design Style</span>
+                    <div  align="center" class="pull-right grey_txt"  >
+                        <input type="radio" name="house" value="minimalist" id="minimalist" checked="checked"  class="input-hidden">
+                        <label for="minimalist">
+                        <small> Minimalist Style </small>
+                        <img src="minimalist.jpg" alt="minimalist" class="img_cust img-circle img-responsive" >
+                        </label>
+                        <input type="radio" name="house" value="midcentury" id="midcentury"  class="input-hidden">
+                        <label for="midcentury"> <small> Mid-Century Style </small>  
+                        <img src="midcentury.jpg" alt="midcentury"  class="img_cust img-circle img-responsive">
+                        </label>
+                        <input type="radio" name="house" value="modern" id="modern"  class="input-hidden">
+                        <label for="modern"> <small> Modern Style </small>  
+                        <img src="modern.jpg" alt="middle" class="img_cust img-circle img-responsive" >
+                        </label>
+                    </div>
+                </div>
+                <div class="row  border_cust">
+                    <span>Amenities</span>
+                    <div class="pull-right grey_txt"  >
+                        <label class="cust_mar "  ><input type="checkbox" name="pool" id="pool"  value="Swimming Pool">Swimming Pool</label>
+                        <label class="cust_mar "  ><input type="checkbox" name="ac" id="ac"  value="Air Conditioning">Air Conditioning</label>
+                        <label class="cust_mar "   ><input type="checkbox" name="hel" id="hel" value="Helipad">Helipad</label> 
+                    </div>
+                </div>
+                <div class="row  border_cust ">
+                    <span> State </span>
+                    <div class="pull-right grey_txt"  >
+                        <select  class="selectpicker" id="statelist">
+                            <option>Baden-Württemberg</option>
+                            <option>Bavaria</option>
+                            <option>Berlin</option>
+                            <option>Brandenburg</option>
+                            <option>Bremen</option>
+                            <option>Hamburg</option>
+                            <option>Hesse</option>
+                            <option>Lower Saxony</option>
+                            <option>Mecklenburg-Vorpommern</option>
+                            <option>North Rhine-Westphalia</option>
+                            <option>Rhineland-Palatinate</option>
+                            <option>Saarland</option>
+                            <option>Saxony</option>
+                            <option>Saxony-Anhalt</option>
+                            <option>Schleswig-Holstein</option>
+                            <option>Thuringia</option>
+                        </select>
+                    </div>
+                </div>
+                <div  class="row  border_cust">
+                    <span> Within 20 KM radius to AirPort?</span>
+                    <div class="pull-right grey_txt"  >
+                        <label class="cust_mar "   ><input type="radio" name="optradio" value="yes" checked>Yes</label>
+                        <label class="cust_mar "  ><input type="radio" name="optradio" value="no">No</label>
+                    </div>
+                </div>
+                <div  align="center"  class="row  border_cust">
+                    <button id="sub" type="button" class="btn btn-default">Submit </button>
+                </div>
+            </form>
+			
+            <div id="res">
+                <div  align="center"  class="row  border_cust">
+                    <h2> Your House is </h2>
+                </div>
+                <div  align="center"  class="row  border_cust">
+                    <h2>  <span class="counter" id="fin_res"  data-count=" "> </span>   <span> Diamonds </span></h2>
+                </div>
+                <div  align="center"  class="row  border_cust">
+                    <h2> worth</h2>
+                </div>
+                <div  align="center"  class="row  border_cust">
+                    <button id="sub1" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Restart
+                    </button>   
+                </div>
+               
+			
+            </div>
+		  
+        </div>
+        <div class="col-sm-2">
+        </div>
+		
+		<footer >
+             
+        </footer>
+		
+    </body>
+</html>
